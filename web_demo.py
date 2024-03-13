@@ -105,7 +105,7 @@ def main(args):
 
     model.add_mixin('auto-regressive', CachedAutoregressiveMixin())
 
-    tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm3-6b", trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True)
 
     with gr.Blocks(css='style.css') as demo:
         gr.Markdown(DESCRIPTION)
